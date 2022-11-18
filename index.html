@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerador de Senhas</title>
+
+    <!-- Link para o CSS(Estilo) da pagina -->
+    <link rel="stylesheet" type="text/CSS" href="./CSS/styles.css">
+
+    
+
+</head>
+
+<body>
+    
+    <div class="ps-container">
+
+        <div class="ps-header">
+            <div class="ps">
+                <span id="ps">Gerador de senhas...</span>
+                <button id="copy">Copiar</button>
+            </div>
+
+        </div>
+
+        <div class="ps-body">
+
+            <div class="form">
+                <lable for="length">Tamanho da senha</lable>
+                <input id="len" value="10" type="number" min="8" max="30">
+            </div>
+
+            <div class="form">
+                <lable for="upper">Incluir letras maiúsculas</lable>
+                <input id="upper" type="checkbox" checked>
+            </div>
+
+            <div class="form">
+                <lable for="lower">Incluir letras minúsculas</lable>
+                <input id="lower" type="checkbox">
+            </div>
+
+            <div class="form">
+                <lable for="number">Incluir números </lable>
+                <input id="number" type="checkbox">
+            </div>
+
+            <div class="form">
+                <lable for="symbol">Incluir caracteres especiais</lable>
+                <input id="symbol" type="checkbox">
+            </div>
+
+            <button class="generate" id="generate">Gerar senha</button>
+        
+        </div>
+
+
+
+
+
+    </div>        
+
+
+
+    <!-- Link para o JavaScript da pagina -->
+    <script src="./Script/index.js"></script>
+</body>
+</html>
